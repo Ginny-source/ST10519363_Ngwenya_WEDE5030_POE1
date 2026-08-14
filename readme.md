@@ -152,7 +152,7 @@ The main goals of the website are to:
 
 The website will have a modern, simple, professional, and food-focused design.
 
-### Colour Scheme
+### Colour pallet
 
 ![colorpallet](IMAGES/new%20color%20pallet.png)
 
@@ -219,3 +219,24 @@ Future development may include:
 
 ## 13. Sitemap
 ![sitemap](IMAGES/sitemaps.drawio.png)
+
+## 14. Changelog
+
+- pushing and pulling on github
+- Created a README.md file.
+
+
+**Future updates**
+
+
+Future update will include:
+
+- CSS Styling
+- Responsive design
+- Java scripting
+- Improved Checkout functionality
+- Form validation 
+- Customer feedback functionality
+
+## 14. Referencing 
+
