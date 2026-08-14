@@ -240,3 +240,26 @@ Future update will include:
 
 ## 14. Referencing 
 
+1.	Pexels image 1
+Pedro Furtado, PF. (2026) Burgerimage. Pexels. Available at: [Photo by pedro furtado from Pexels: https://www.pexels.com/photo/trio-of-gourmet-cheeseburgers-with-toppings-28902883/] (Accessed: 14 August 2026).
+2.	Pexels image 2
+Amine Kubranur cakiroglu, AKC. (2026) Close-up of a gourmet cheeseburger held by hands in black gloves.Pexels. Available at: [https://www.pexels.com/@amine-kubranur-cakiroglu-689611212/] (Accessed: 14 August 2026).
+3.	Pexels image 3
+Valerine Boltneva, VB. (2026) Close-up of a gourmet beef burger being held by gloved hands in a restaurant setting. Pexels. Available at: [Photo by Valeria Boltneva from Pexels: https://www.pexels.com/photo/burger-served-in-a-restaurant-18976990/] (Accessed: 14 August 2026).
+4.	Pexels image 4
+Jaison Jacob Samuel, JBS. (2026) Close-up of a baked pizza with savory toppings in a boxPexels. Available at: [Photo by Jaison Jacob Samuel from Pexels: https://www.pexels.com/photo/delicious-baked-pizza-with-toppings-35609608/] (Accessed: 14 August 2026).
+5.	Pexels image 5
+Roman odintsov, RO. (2026) A bowl of crispy, delicious french fries garnished with herbs on a dark background.Pexels. Available at: [Photo by ROMAN ODINTSOV from Pexels: https://www.pexels.com/photo/french-fries-in-a-ceramic-bowl-5836999/] (Accessed: 14 August 2026).
+6.	Pexels image 6
+[Photographer surname], [Initial]. (Year) [Title/description of image]. Pexels. Available at: [Pexels image URL] (Accessed: 14 August 2026).
+7.	Pexels image 7
+Merkhat Amangeldinov .MA. (2026) A close-up of a cheese pizza with black olives, held by a woman's hand in a cozy restaurant setting.Pexels. Available at: [Photo by Merkhat Amangeldinov from Pexels: https://www.pexels.com/photo/taking-a-slice-of-pizza-20313061/] (Accessed: 14 August 2026).
+8.	Pexels image 8
+Speak Media Uganda, (2026) . Vibrant mococktails with lime slices served in glasses on a wooden table, perfect for nightlife scenesPexels. Available at: [Photo by Speak Media Uganda from Pexels: https://www.pexels.com/photo/two-drinks-with-lime-and-lemon-on-a-wooden-table-27530811/] (Accessed: 14 August 2026).
+9.	Pexels image 9
+Kubra Tokur, KT. (2026). Professional chefs work together preparing meals in a restaurant kitchen with steam rising. Pexels. Available at: [Photo by KÜBRA TOKUR from Pexels: https://www.pexels.com/photo/people-working-in-restaurant-kitchen-15441279/] (Accessed: 14 August 2026).
+10.	Pexels image 10
+Vitaly Gariev, VG. (2026) A professional meeting with a team discussing business strategies in a modern office setting. Pexels. Available at: [Photo by Vitaly Gariev from Pexels: https://www.pexels.com/photo/business-meeting-with-professional-team-in-office-36765719/] (Accessed: 14 August 2026).
+
+11.	Pexels image 10
+Alena Darmel, AD. (2026) . Cozy setup with pizza, burgers, and gaming controller, perfect for casual indoor hangouts. Pexels. Available at: [Photo by Alena Darmel from Pexels: https://www.pexels.com/photo/hands-getting-slice-of-pizza-on-a-box-6643712/] (Accessed: 14 August 2026).
