@@ -4,81 +4,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Where Eevry craving finds its flavor</title>
+ <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--EMBEDDED CSS-->
+    <style>
+        .welcome-text{
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+        .hero-small-title {
+            font: italic;
+            letter-spacing: 1px;
+        }
+        .section-title h2{
+            letter-spacing: 0.5px;
+        }
+        .menu-card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s ease;
+        }
+
+    </style>
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        
-            <h3>LOGO</h3>
-        
 
-        <!-- Navigation -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="About_us.html">About Us</a>
-            <a href="checkout.html">Checkout</a>
-            <a href="Enquire.html">Enquire</a>
-            <a href="Contact_us.html">Contact Us</a>
+    <div
+        <nav class="navbar">
+            
+            <!--logo-->
+
+             <div class="logo">
+                CREAVE CORNER
+                 <span>
+                    FAST FOOD
+                </span>
+            <img src="IMAGES/logo.png" alt="creatives corner logo" width="120px" height="auto">
+            </div>
+        
+        <!-- NAVIGATION -->
+         <ul class="nav-links">
+            <li>
+            <a href="index.html">
+                Home
+            </a>
+            </li>
+            <li>
+            <a href="menu.html">
+                Menu
+            </a>
+            </li>
+            <li>
+            <a href="About_us.html">
+                About Us
+            </a>
+            </li>
+            <li>
+            <a href="checkout.html">
+                Checkout
+            </a>
+            </li>
+            <li>
+            <a href="Enquire.html">
+                Enquire
+            </a>
+            </li>
+            <li>
+            <a href="Contact_us.html">
+                Contact Us
+            </a>
+            </li>
+            </ul>
+
+            <!--INLINE CSS-->
+            <a href="#contact us"
+            class="order-btn"
+            style="letter-spacing:1px;">
+            CONTACT US
+            </a>
+       
         </nav>
 
         <!-- Header Icons / Links -->
         
     </header>
-
-
+    
     <!-- Main Content -->
     <main>
 
         <!-- Home Section -->
-        <section>
-            <img src="IMAGES/Crave Corner.png" height="100%" width="100%">
-            
+        <section
+        id="home"
+        class="hero" 
 
-            <h1>
-                Where Every Craving<br>
+        <div class="hero-content">
+
+            <!--INLINE CSS-->
+
+            <p
+            class="welcome-text"
+            style="color: #6F4329;">
+            welcome to our corner where everything is Savoury and Sweet!
+
+            </p>
+            
+           
+
+          <!--INLINE-->
+            <h1 style="colour:#6F4329;">
+                Where Every Craving
                 Finds Its Flavor!
             </h1>
 
-            <!-- Search -->
-            
-                <input type="search" placeholder="Search here">
-                <button type="submit">Search</button>
-            
-        </section>
+        <P>
+            Savoury handcrafted burgers,
+            sweeet drinks, and cozy bites. Your perfect escape
+        </P>
+
+        <!--INLINE CSS-->
+
+        <a href="#menu"
+        class="order-btn"
+        style="letter-spacing:normal;">
+        VIEW OUR MENU
+        </a>
+
+        </div>
+
+         </section>
 
 
         <!-- Services / Quick Links -->
-        <section>
-            <h2>Our Services</h2>
-
+        <section class="quick-links">
+            
+            <div class="quick-items">
+                <div class="quick-icon">
+                
+            </div>
            
-                <a href="#">
+            </div>
+            <a href="our services"
+            class="order-btn"
+            style="letter-spacing: normal;">
+            <h2>Our Services</h2>
+             </a>
+            
+
+           <a href="24/7 FOOD"
+                class="order-btn"
+                style="letter-spacing:normal;">
                     <h3>24/7 FOOD</h3>
                 </a>
 
-                <a href="menu.html">
+                <a href="menu.html"
+                class="order-btn"
+                style="letter-spacing: normal;">
                     <h3>MENU</h3>
                 </a>
 
-                <a href="#">
+                <a href="home services"
+                class="order-btn"
+                style="letter-spacing: normal;">
                     <h3>HOME SERVICES</h3>
                 </a>
 
-                <a href="#">
+                <a href="Delivery"
+                class="order-btn"
+                style="letter-spacing: normal;">
                     <h3>DELIVERY</h3>
                 </a>
 
-                <a href="checkout.html">
+                <a href="checkout.html"
+                class="order-btn"
+                style="letter-spacing: normal;">
                     <h3>CHECKOUT</h3>
                 </a>
             
         </section>
 
+        <!--VISIT US-->
+
+        <section
+        id="gallery"
+        class="visit-us">
+
+        <div class="visit-content">
+            ><h2>
+                Visit Us Today
+            </h2>
+            <p>
+            You are welcome to our vendor, Come for burgers and pizza. Dont only think we have those only, We have all types of sides and drinks
+            </p>
+            <!--INLINE CSS-->
+            <a 
+            href="#contact"
+            class="Enquire Us-btn"
+            style="font-weight: 600;">
+            ENQUIRE WITH US
+
+            </a>
+
+        </div>
+        
+        <div class="visit-image">
+        <img 
+        src="IMAGES/food vendor.jpg" alt="foodvendor outside"
+
+        </div>
+
+        </section>
+
     </main>
     <!-- Footer -->
 <footer>
+
+    <div class="top bar">
+        <p>
+            Good food, Good mood
+        </p>
+        <p>
+            Mon-Sun: 7:00 AM - 9:00 PM
+        </p>
+    </div>
+
    <!-- Popular Page -->
         <section>
             <h2>Popular Page</h2>
@@ -91,6 +242,7 @@
                 <li><a href="Enquire.html">Enquire</a></li>
                 <li><a href="Contact_us.html">Contact Us</a></li>
             </ul>
+            
         </section>
 
 
@@ -99,12 +251,12 @@
             <h2>Popular Category</h2>
 
             <ul>
-                <li><a href="#">Main</a></li>
-                <li><a href="#">Savoury</a></li>
-                <li><a href="#">Sushi</a></li>
-                <li><a href="#">Meat Platter</a></li>
-                <li><a href="#">Sides</a></li>
-                <li><a href="#">Drink</a></li>
+                <li><a href="Main">Main</a></li>
+                <li><a href="Savoury">Savoury</a></li>
+                <li><a href="Sushi">Sushi</a></li>
+                <li><a href="Meat platter">Meat Platter</a></li>
+                <li><a href="Sides">Sides</a></li>
+                <li><a href="Drinks">Drink</a></li>
             </ul>
         </section>
 
