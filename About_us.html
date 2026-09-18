@@ -3,101 +3,442 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us | Crave Corner</title>
+    
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #F1E8E1;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Top Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background-color: #F1E8E1;
+            border-bottom: 1px solid #eeeeee;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+      .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #2B1B12;
+}
+
+.logo span {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 8px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #6F4329;
+}
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color:#6F4329;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #000000;
+        }
+
+        .btn-shop {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px 24px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Hero Banner */
+        .hero {
+            position: relative;
+            height: 80vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('IMAGES/Menu.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            color: #ffffff;
+        }
+
+        .hero-content {
+            max-width: 500px;
+        }
+
+        .hero-subtitle {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .hero-title {
+            font-family: 'Georgia', serif;
+            font-size: 64px;
+            font-weight: normal;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #dddddd;
+        }
+
+        .btn-outline {
+            display: inline-block;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            padding: 12px 30px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .btn-outline:hover {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        /* Split Section 1 (Light) */
+        .split-section {
+            display: flex;
+            min-height: 80vh;
+        }
+
+        .split-image, .split-text {
+            flex: 1;
+        }
+
+        .split-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .split-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 10%;
+            background-color: #F1E8E1;
+        }
+
+        .split-subtitle {
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            font-size: 24px;
+            color: #666666;
+            margin-bottom: 10px;
+        }
+
+        .split-title {
+            font-family: 'Georgia', serif;
+            font-size: 48px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .split-description {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .btn-outline-dark {
+            display: inline-block;
+            border: 1px solid #333333;
+            color: #333333;
+            padding: 12px 30px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            align-self: flex-start;
+        }
+
+        /* Split Section 2 (Dark) */
+        .split-section.dark {
+            background-color: #0d0d0d;
+            color: #F1E8E1;
+        }
+
+        .split-section.dark .split-text {
+            background-color: #0d0d0d;
+        }
+
+        .split-section.dark .split-description {
+            color: #aaaaaa;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 100px 8%;
+            text-align: center;
+            background-color: #F1E8E1;
+        }
+
+        .team-section h2 {
+            font-family: 'Georgia', serif;
+            font-size: 48px;
+            font-weight: normal;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .team-section .subtitle {
+            font-size: 13px;
+            color: #777777;
+            max-width: 600px;
+            margin: 0 auto 60px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .team-card {
+            text-align: left;
+        }
+
+        .team-card img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .team-card h3 {
+            font-family: 'Georgia', serif;
+            font-size: 20px;
+            font-weight: normal;
+            margin-bottom: 8px;
+        }
+
+        .team-card p {
+            font-size: 13px;
+            color: #6F4329;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #F1E8E1;
+            border-top: 1px solid #eeeeee;
+            padding: 60px 8% 30px;
+            font-size: 13px;
+            color: #6F4329;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-col h4 {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color:#6F4329;
+            margin-bottom: 20px;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .copyright {
+            border-top: 1px solid #181818;
+            padding-top: 20px;
+            font-size: 11px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .split-section {
+                flex-direction: column;
+            }
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Navigation Header -->
     <header>
-        <p></p>
-        <a href="Index.html">Home</a>
-        <a href="Menu.html">Menu</a>
-        <a href="About_us.html">About Us</a>
-        <a href="Checkout.html">Checkout</a>
-        <a href="Enquire.html">Enquire</a>
-        <a href="Contact_us.html">Contact us</a>
+        <!--logo-->
+
+             <div class="logo">
+                CRAVE CORNER
+                 <span>
+                    FAST FOOD
+                </span>
+            <img src="IMAGES/logo.png" alt="creatives corner logo" width="120px" height="auto">
+            </div>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="Menu.html">Menu</a>
+            <a href="About_us.html">About Us</a>
+            <a href="Checkout.html">Checkout</a>
+            <a href="Enquire.html">Enquire</a>
+            <a href="Contact_us.html">Contact Us</a>
+        </nav>
+        <a href="Menu.html" class="btn-shop" >Order Now</a>
     </header>
-    <h1>About Us</h1>
-    <p>At Crave Corner we serve fresh, delicious, and affordable food made with love and kindness. We aim to satisfy every craving with great flavour, generous portions, and friendly service</p>
-    <br/>
-    <h2>The Menu</h2>
-    <p>Our Menu is made with care, using quality ingredients and bold flavours to give our customer a memorable food experience. 
-        Whether you're grabbing a quick meal, enjoying a snack with friends, or simply treating
-        yourself Crave Corner is here to make every bite count.  </p>
-        <img src="IMAGES/Menu.jpg" height="400px" width="400px">
-        <br/>
-    <h2>Our Team is passionate, friendly and dedicated</h2>
-    <img src="IMAGES/the staff.jpg" height="300px" width="300px">
-    <h2>The manager</h2>
-    <img src="IMAGES/Manager.jpg" height="300px" width="300px">
-    <h2>The chef</h2>
-    <img src="IMAGES/The chef.jpg" height="300px" width="300px">
-    <h2>The team</h2>
-    <img src="IMAGES/the team.jpg" height="300px" width="300px">
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Meet The Team</span>
+            <h1 class="hero-title">ABOUT US</h1>
+            <p class="hero-description">At Crave Corner we serve fresh, delicious, and affordable food made with love and kindness. We aim to satisfy every craving with great flavour, generous portions, and friendly service.</p>
+            <a href="Menu.html" class="btn-outline">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Feature Split Section 1 -->
+    <section class="split-section">
+        <div class="split-image">
+            <img src="IMAGES/Menu.jpg" alt="Our Menu">
+        </div>
+        <div class="split-text">
+            <span class="split-subtitle">Unique & Fresh</span>
+            <h2 class="split-title">The Menu</h2>
+            <p class="split-description">Our Menu is made with care, using quality ingredients and bold flavours to give our customers a memorable food experience. Whether you're grabbing a quick meal, enjoying a snack with friends, or treating yourself, Crave Corner makes every bite count.</p>
+            <a href="Menu.html" class="btn-outline-dark">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Feature Split Section 2 (Dark Theme) -->
+    <section class="split-section dark">
+        <div class="split-text">
+            <h2 class="split-title">Our History</h2>
+            <p class="split-description">Founded with a passion for bold food and community, Crave Corner started as a simple idea: bringing high-quality meals made from scratch to everyone who loves great food.</p>
+        </div>
+        <div class="split-image">
+            <img src="IMAGES/the staff.jpg" alt="Our History">
+        </div>
+    </section>
+
+    <!-- Team Section Grid -->
+    <section class="team-section">
+        <h2>Meet the Team</h2>
+        <p class="subtitle">Our team is passionate, friendly, and dedicated to serving you the best dining experience every day.</p>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="IMAGES/Manager.jpg" alt="The Manager">
+                <h3>The Manager</h3>
+                <p>Leading Crave Corner with dedication, ensuring every guest experiences warmth, quality service, and exceptional hospitality.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="IMAGES/The chef.jpg" alt="The Chef">
+                <h3>The Chef</h3>
+                <p>The mastermind behind our signature recipes, turning fresh ingredients into unforgettable, flavorful dishes.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="IMAGES/the team.jpg" alt="The Team">
+                <h3>The Team</h3>
+                <p>Our hardworking staff, always ready with a smile to ensure your visit is delightful from start to finish.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 20px;">CRAVE CORNER</div>
+                <img src="IMAGES/logo.png" alt="creatives corner logo" width="120px" height="auto">
+            </div>
 
-        <!-- Popular Page -->
-        <section>
-            <h2>Popular Page</h2>
+            <div class="footer-col">
+                <h4>Popular Pages</h4>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="About_us.html">About Us</a></li>
+                    <li><a href="Checkout.html">Checkout</a></li>
+                </ul>
+            </div>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="About_us.html">About Us</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
-                <li><a href="Enquire.html">Enquiries</a></li>
-                <li><a href="Contact_us.html">Contact Us</a></li>
-            </ul>
-        </section>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">Savoury</a></li>
+                    <li><a href="#">Sides</a></li>
+                    <li><a href="#">Drinks</a></li>
+                </ul>
+            </div>
 
+            <div class="footer-col">
+                <h4>Reach Us</h4>
+                <p>Phone: 012 345 6789</p>
+                <p>Email: info@cravecorner.com</p>
+            </div>
+        </div>
 
-        <!-- Popular Category -->
-        <section>
-            <h2>Popular Category</h2>
+        <div class="copyright">
+            <span>&copy; 2026 Crave Corner. All Rights Reserved.</span>
+            
+        </div>
+    </footer>
 
-            <ul>
-                <li><a href="#">Main</a></li>
-                <li><a href="#">Savoury</a></li>
-                <li><a href="#">Sushi</a></li>
-                <li><a href="#">Meat Platter</a></li>
-                <li><a href="#">Sides</a></li>
-                <li><a href="#">Drink</a></li>
-            </ul>
-        </section>
-
-
-        <!-- Reach Us -->
-        <section>
-            <h2>Reach Us</h2>
-
-            <p>
-                Phone: 012 345 6789
-            </p>
-
-            <p>
-            Email:info@Crave Corner.gmail.com
-            </p>
-        </section>
-
-
-        <!-- Connect With Us -->
-        <section>
-            <h2>Connect With Us</h2>
-
-            <p>
-                <a href="#">Facebook</a>
-            </p>
-
-            <p>
-                <a href="#">Instagram</a>
-            </p>
-
-            <p>
-                <a href="#">TikTok</a>
-            </p>
-        </section>
-
-<p>2026 Crave Corner Copyright Reserved</p>
-    
-</footer>
 </body>
 </html>

@@ -3,9 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Checkout | Crave Corner</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <header class="header-nav">
+        <div class="logo">
+                CRAVE CORNER
+                 <span>
+                    FAST FOOD
+                </span>
+            <img src="IMAGES/logo.png" alt="creatives corner logo" width="120px" height="auto">
+            </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="About_us.html">About Us</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="Enquire.html">Enquiries</a></li>
+            <li><a href="Contact_us.html">Contact Us</a></li>
+        </ul>
+</header>
+
+    <!-- Main Checkout Split Container -->
+    <div class="checkout-container">
+
+        <!-- Left Column: Address Form -->
+        <div class="left-panel">
+            <h1 class="page-title">Checkout</h1>
+
+            <div class="step-indicator">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <span>Delivery</span>
+                </div>
+                <div class="step inactive">
+                    <span class="step-number">2</span>
+                    <span>Confirm & Pay</span>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <span class="required-note">*Required</span>
+                    <label for="email">*Email address</label>
+                    <input type="email" id="email" value="daniel">
+                    <div class="field-subtext">We'll send an order confirmation to this address. You can create an account after you complete your order.</div>
+                </div>
+
+                <h2 class="section-heading">Delivery address</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">*First name</label>
+                        <input type="text" id="fname" value="Daniel">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">*Last name</label>
+                        <input type="text" id="lname" value="Codner">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">*Phone number</label>
+                    <input type="tel" id="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">*Address</label>
+                    <input type="text" id="address">
+                    <span class="link-text">Enter address manually</span>
+                </div>
+
+                <h2 class="section-heading">Delivery options</h2>
+
+                <div class="option-box">
+                    <input type="radio" checked id="delivery-std">
+                    <div class="option-details">
+                        <div class="option-subtitle"> Delivery </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Right Column: Order Summary -->
+        <div class="right-panel">
+            <h2 class="summary-title">Your order</h2>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>R295.00</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Delivery  </span>
+                <span>R50.00</span>
+            </div>
+
+            <div class="summary-row summary-total">
+                <div>
+                    Total
+                    <span class="vat-note">Includes 20% </span>
+                </div>
+                <div>R315.00</div>
+            </div>
+
+            <div class="order-card">
+                <div class="order-card-header">Order summary</div>
+
+                <div class="cart-item">
+                    <img src="IMAGES/Burger 2.jpg" alt="Item Image">
+                    <div class="item-info">
+                        <span class="item-brand">Burger</span>
+                        <div class="item-name">Juicy grilled burgers with fresh toppings and a delicious signature sauce.</div>
+                    </div>
+                    <div class="item-price">R150.00</div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="IMAGES/pizza 3.jpg" alt="Item Image">
+                    <div class="item-info">
+                        <span class="item-brand">Pizza</span>
+                        <div class="item-name">Crispy, freshly baked pizza with melted cheese, rich tomato sauce, and tasty toppings.</div>
+                    </div>
+                    <div class="item-Price">R115.00</div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="IMAGES/soda 1.jpg" alt="Item Image">
+                    <div class="item-info">
+                        <span class="item-brand">Soda</span>
+                        <div class="item-name">Refreshing, chilled soda with a crisp and fizzy taste</div>
+                    </div>
+                    <div class="item-Price">R30.00</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <br>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Popular Page</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="About_us.html">About Us</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Popular Category</h3>
+                <ul>
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">Savoury</a></li>
+                    <li><a href="#">Sushi</a></li>
+                    <li><a href="#">Drinks</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Reach Us</h3>
+                <p>Phone: 012 345 6789</p>
+                <p>Email: info@cravecornersvendor.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+    </br>
+        <div class="copyright">
+            &copy; 2026 Crave Corner. All Rights Reserved.
+        </div>
+    </footer>
+
+
 </body>
 </html>

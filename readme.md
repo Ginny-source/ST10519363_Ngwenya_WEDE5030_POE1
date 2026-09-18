@@ -1,4 +1,4 @@
-#  Crave Corner
+#  Crave Corner Part 1 
 
 ## Where Every Craving Finds Its Flavor!
 
@@ -263,3 +263,80 @@ Vitaly Gariev, VG. (2026) A professional meeting with a team discussing business
 
 11.	Pexels image 10
 Alena Darmel, AD. (2026) . Cozy setup with pizza, burgers, and gaming controller, perfect for casual indoor hangouts. Pexels. Available at: [Photo by Alena Darmel from Pexels: https://www.pexels.com/photo/hands-getting-slice-of-pizza-on-a-box-6643712/] (Accessed: 14 August 2026).
+
+
+# Crave Corner Part 2 
+
+# How to run and access the files 
+On github we have al the html and css files were you can acess the html and ccs code. i have linked all the images into the html codes from the image files. we move from the:
+Home page to Menu 
+Then from Menu to About us 
+from About us to the checkout
+checkout to enquiries then to the last page which is the contact us page 
+# Changes due to the About Us page 
+Changed on the team part.
+then we did add a few pictures on the home page 
+i did add the location to the contact us page 
+
+# Timeline and Milestones
+10-14 Aug  a website using HTML was created , Basic HTML should be used,Navigation bars and no color schemes, Business concept completed 
+ 17-31 Aug CSS styling, Website features identified, Color schemes, Logos, Different type of fonts 
+ 4-11 Sept  different screens, Website layout completed, Links, website testing, HTML Development 
+ 14-18 Sept Css was used and proper fuctioning to the app was improved. Improvements, Errors corrected , Documentation, README completed, Submission,  Project submitted
+ 18 sep the formative part 2 was submitted where we have used html and css on 
+ # Technologies Used
+- HTML5
+- Visual Studio Code
+- Git
+- GitHub
+- Css
+# How to navigate on the website
+1. Home Page (index.html)
+
+Browse Content: View featured dishes, current special offers, and general restaurant highlights.
+
+Get Started: Use the top header menu to navigate to specific sections (Menu, About Us, Enquire, Contact Us).
+
+2. Menu Page (menu.html)
+
+Explore Categories: Browse through different food categories such as appitizers, Mains, Savoury,  Sides.
+
+Select Items: Pick desired food items and add them to the cart before proceeding to checkout.
+
+3. About Us Page (About_us.html)
+
+Learn More: Read about Crave Corner's story, values, culinary approach, and commitment to fresh ingredients.
+
+4. Enquire Page (Enquire.html)
+
+Submit Requests: Fill out the line-style form (Name, Email, Phone, Subject, and Message) for custom event catering, large group bookings, or general questions.
+
+5. Contact Us Page (Contact_us.html)
+
+Find Direct Info: View physical address details, operating hours, direct phone/WhatsApp numbers, and the interactive location map.
+
+Quick Message: Use the contact form to message customer support directly.
+
+6. Checkout Page (checkout.html)
+
+Enter Details: Fill in delivery address and contact information on the left panel.
+
+Review Order: Check items, quantities, applied discounts, and order totals in the right-side order summary.
+
+Complete Purchase: Select delivery options and finalize the order payment.
+# Updates 
+-Css was used and 
+-Improved Checkout functionality
+- Form validation 
+- Customer feedback functionality
+
+
+# Reference
+
+1. Logo picture
+Karyative.2026.Home Delivery free icon.[FLATICON website] Available at:https://www.flaticon.com/free-icon/home-delivery_17845749?term=food&page=4&position=54&origin=tag&related_id=17845749 Accessed 11 September 2026. 
+
+2. visit us images (Pintrest)
+Kayleigh Jones.2026.Lanterns and lights down either side of the driveway.[Pintrest] Available at:https://pin.it/7DENXzXQp Accessed 11 September 2026.
+<3.2026.Outside vendor.[Pintrest] Available at:https://pin.it/DBcuuBn5k Accessed 11 September 2026.
+

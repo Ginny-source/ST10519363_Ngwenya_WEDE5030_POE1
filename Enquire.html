@@ -4,175 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquire With Us - Crave Corner</title>
+    <title>Inquire - Crave Corner</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
-
-        <h3>LOGO</h3>
+    <!-- Main Navigation Header -->
+    <header class="header-nav">
+        <div class="logo">
+                CRAVE CORNER
+                 <span>
+                    FAST FOOD
+                </span>
+            <img src="IMAGES/logo.png" alt="creatives corner logo" width="120px" height="auto">
+            </div>
 
         <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="About_us.html">About Us</a>
-            <a href="checkout.html">Checkout</a>
-            <a href="Enquire.html">Enquiries</a>
-            <a href="Contact_us.html">Contact Us</a>
+            <a href="index.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="About_us.html">ABOUT US</a>
+            <a href="checkout.html">CHECKOUT</a>
+            <a href="Enquire.html" class="active">ENQUIRE</a>
+            <a href="Contact_us.html" class="btn-contact">CONTACT US</a>
         </nav>
 
-       
-
+        <div class="header-socials">
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
     </header>
 
 
     <!-- Main Content -->
-    <main>
+    <main class="inquire-container">
 
-        <h1>Enquire With Us</h1>
+        <h1 class="page-title">ENQUIRE</h1>
 
-        <!-- Introduction -->
-        <section>
+        <p class="intro-text">
+            Have a question or want to place an order? Get in touch with Crave Corner! 
+            We're happy to assist you with menu options, orders, bookings, and general enquiries.
+            You can reach us at <a href="mailto:info@cravecorner.co.za">info@cravecorner.co.za</a> 
+            or fill out the form below.
+        </p>
 
-            <h2>HOW CAN WE HELP YOU</h2>
+        <!-- Minimal Form -->
+        <form class="inquire-form">
 
-            <p style="color: #5A4639;">
-                Have a question or want to place an order?
-                <strong>Get in touch with Crave Corner!</strong>
-                We're happy to assist you with menu options,
-                orders, bookings, and general enquiries.
-            </p>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fname">First name*</label>
+                    <input type="text" id="fname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last name*</label>
+                    <input type="text" id="lname" required>
+                </div>
+            </div>
 
-        </section>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Your email*</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone">
+                </div>
+            </div>
 
+            <div class="form-group full-width">
+                <label for="subject">Subject*</label>
+                <input type="text" id="subject" required>
+            </div>
 
-        <!-- Contact Information -->
-        <section>
+            <div class="form-group full-width">
+                <label for="message">Your message</label>
+                <textarea id="message" rows="3"></textarea>
+            </div>
 
-            <h2>OR CONTACT US DIRECTLY</h2>
+            <div class="btn-container">
+                <button type="submit" class="submit-btn">SUBMIT FORM</button>
+            </div>
 
-            <p>
-                <strong>Phone:</strong> 012 345 6789
-            </p>
-
-            <p>
-                <strong>Email:</strong>
-                <a href="mailto:info@cravecorner.co.za">
-                    info@cravecorner.co.za
-                </a>
-            </p>
-
-            <p>
-                <strong>Social Media:</strong> @CraveCorner
-            </p>
-
-            <p>
-                We look forward to hearing from you!
-            </p>
-
-        </section>
-
-
-        <!-- Enquiry Form -->
-        <section>
-
-            <h2>Send Us Your Enquiry</h2>
-
-            <form>
-
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-
-                <br><br>
-
-                <label for="phone">Your Phone:</label>
-                <input type="tel" id="phone" name="phone">
-
-                <br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-
-                <br><br>
-
-                <label for="location">Location:</label>
-                <input type="text" id="location" name="location">
-
-                <br><br>
-
-                <label for="enquiry">Your Enquiry:</label>
-                <br>
-
-                <textarea id="enquiry" name="enquiry" rows="6" cols="40"></textarea>
-
-                <br><br>
-
-                <button type="submit">Submit Enquiry</button>
-
-            </form>
-
-        </section>
+        </form>
 
     </main>
 
 
-    <!-- Footer -->
+     <!-- Footer -->
     <footer>
-
-        <section>
-            <h2>Popular Page</h2>
-
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="About_us.html">About Us</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
-                <li><a href="Enquire.html">Enquire</a></li>
-                <li><a href="Contact_us.html">Contact Us</a></li>
-            </ul>
-        </section>
-
-
-        <section>
-            <h2>Popular Category</h2>
-
-            <ul>
-                <li><a href="#">Main</a></li>
-                <li><a href="#">Savoury</a></li>
-                <li><a href="#">Sushi</a></li>
-                <li><a href="#">Meat Platter</a></li>
-                <li><a href="#">Sides</a></li>
-                <li><a href="#">Drink</a></li>
-            </ul>
-        </section>
-
-
-        <section>
-            <h2>Reach Us</h2>
-
-            <p>Phone: 012 345 6789</p>
-            <p>Email: info@cravecorner.co.za</p>
-        </section>
-
-
-        <section>
-            <h2>Connect with us</h2>
-
-            <p>
-                <a href="#">Facebook</a>
-            </p>
-
-            <p>
-                <a href="#">Instagram</a>
-            </p>
-
-            <p>
-                <a href="#">TikTok</a>
-            </p>
-        </section>
-
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Popular Page</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="About_us.html">About Us</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Popular Category</h3>
+                <ul>
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">Savoury</a></li>
+                    <li><a href="#">Sushi</a></li>
+                    <li><a href="#">Drinks</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Reach Us</h3>
+                <p>Phone: 012 345 6789</p>
+                <p>Email: info@cravecornersvendor.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Crave Corner. All Rights Reserved.
+        </div>
     </footer>
 
 </body>
