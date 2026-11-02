@@ -3,39 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Where Eevry craving finds its flavor</title>
+    <title>Where Every craving finds its flavor</title>
  <!-- EXTERNAL CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!--EMBEDDED CSS-->
     <style>
-        .welcome-text{
-            font-style: italic;
-            letter-spacing: 1px;
-        }
-        .hero-small-title {
-            font: italic;
-            letter-spacing: 1px;
-        }
-        .section-title h2{
-            letter-spacing: 0.5px;
-        }
-        .menu-card:hover {
-            transform: translateY(-5px);
-            transition: 0.3s ease;
+
+        
+     /* Top Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background-color: #F1E8E1;
+            border-bottom: 1px solid #eeeeee;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
+      .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #2B1B12;
+}
+
+.logo span {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 8px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #6F4329;
+}
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color:#6F4329;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #000000;
+        }
+        
+    /* The container that hides the outer overflow */
+        .marquee-wrapper {
+            width: 100%;
+            overflow: hidden;
+            background: #d8c6b8;
+            padding: 20px 0;
+        }
+
+        /* The track that moves continuously */
+        .marquee-track {
+            display: flex;
+            gap: 30px;
+            width: max-content;
+            animation: scrollMenu 20s linear infinite;
+        }
+
+        /* Pauses the movement when someone hovers their mouse over a food */
+        .marquee-wrapper:hover .marquee-track {
+            animation-play-state: paused;
+        }
+
+        .card {
+            background: #d8c6b8;
+            border-radius: 12px;
+            overflow: hidden;
+            width: 280px;
+            text-align: center;
+            padding: 20px;
+            flex-shrink: 0; /* Prevents cards from squishing */
+        }
+
+        .Food-tag {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #888;
+            margin-bottom: 5px;
+        }
+
+        .Food-title {
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0 0 15px 0;
+            letter-spacing: 1px;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 250px;
+            background-color: #eaeaea;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+
+        /* Keyframes to smoothly move the track */
+        @keyframes scrollMenu {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                /* Moves exactly half the width of the combined duplicated track for a seamless loop */
+                transform: translateX(calc(-50% - 15px)); 
+            }
+        }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Navigation Header -->
     <header>
-
-    <div
-        <nav class="navbar">
-            
-            <!--logo-->
+        <!--logo-->
 
              <div class="logo">
                 CRAVE CORNER
@@ -44,76 +145,86 @@
                 </span>
             <img src="IMAGES/logo.png" alt="creatives corner logo" width="120px" height="auto">
             </div>
-            
-        
-        <!-- NAVIGATION -->
-         <ul class="nav-links">
-            <li>
-            <a href="index.html">Home</a>
-            </li>
-            <li>
-            <a href="menu.html"> Menu</a>
-            </li>
-            <li>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="Menu.html">Menu</a>
             <a href="About_us.html">About Us</a>
-            </li>
-            <li>
-            <a href="checkout.html">Checkout</a>
-            </li>
-            <li>
+            <a href="Checkout.html">Checkout</a>
             <a href="Enquire.html">Enquire</a>
-            </li>
-            </ul>
-            <a href="Contact_us.html"class="order-btn" >CONTACT US</a>
-       
+            <a href="Contact_us.html">Contact Us</a>
         </nav>
-
-        <!-- Header Icons / Links -->
-        
+        <a href="Menu.html" class="btn-shop" >Order Now</a>
     </header>
     
     <!-- Main Content -->
     <main>
 
-        <!-- Home Section -->
-        <section
-        id="home"
-        class="hero" 
-
-        <div class="hero-content">
-
-            <!--INLINE CSS-->
-
-            <p
-            class="welcome-text"
-            style="color: #6F4329;">
-            welcome to our corner where everything is Savoury and Sweet!
-
-            </p>
+         <div class="marquee-wrapper">
+        <div class="marquee-track">
             
-           
+            <!-- ====== ORIGINAL CARDS ====== -->
+             <!--start from card one until the last added cards-->
+            <!-- Card 1: burger -->
+            <div class="card">
+                <div class="Food-tag">Burgers</div>
+                <h2 class="Food-title Burgers"></h2>
+                <img class="image-placeholder" src="IMAGES/Burger 1.jpg" alt="Smash Burgers">
+               
+            </div>
 
-          <!--INLINE-->
-            <h1 style="color:#6F4329;">
-                Where Every Craving
-                Finds Its Flavor!
-            </h1>
+             <div class="card">
+                <div class="food-tag">Side</div>
+                <h2 class="food-title chocolate">Ribs</h2>
+                <img class="image-placeholder" src="IMAGES/rib 1.jpg" alt="Ribs">
+                
+            </div>
 
-        <P>
-            Savoury handcrafted burgers,
-            sweeet drinks, and cozy bites. Your perfect escape
-        </P>
+            <!-- Card 2: Pizza-->
+            <div class="card">
+                <div class="Food-tag">Pizza</div>
+                <h2 class="food-title Pizza">Vegan Pizza</h2>
+                <img class="image-placeholder" src="IMAGES/pizza 2.jpg" alt="Pizza">
+               
+            </div>
 
-        <!--INLINE CSS-->
+           <!-- Card 3: Sushi -->
+            <div class="card">
+                <div class="food-tag">Seafood</div>
+                <h2 class="food-title chocolate">Fried Sushi</h2>
+                <img class="image-placeholder" src="IMAGES/sushi 2.jpg" alt="Sushi">
+              
+            </div>
 
-        <a href="Menu.html"
-        class="order-btn"
-        style="letter-spacing:normal;">
-        VIEW OUR MENU
-        </a>
+            <!-- ====== DUPLICATED CARDS (Creates the endless infinite loop effect) ====== -->
+            <div class="card">
+                <div class="food-tag">Wings</div>
+                <h2 class="food-title wings"> Dunked Wings</h2>
+                <img class="image-placeholder" src="IMAGES/wing 1.jpg" alt="Wings">
+                
+            </div>
+
+            <div class="card">
+                <div class="food-tag">Side</div>
+                <h2 class="food-title chocolate">Nachos</h2>
+                <img class="image-placeholder" src="IMAGES/nacho 1.jpg" alt="nachos">
+                
+            </div>
+            <div class="card">
+                <div class="food-tag">Side</div>
+                <h2 class="food-title chocolate">Chicken Nuggets</h2>
+                <img class="image-placeholder" src="IMAGES/chicken nugget 1.jpg" alt="chicken nuggets">
+                
+            </div>
+
+            <div class="card">
+                <div class="food-tag">drinks</div>
+                <h2 class="food-title chocolate">Moctails</h2>
+                <img class="image-placeholder" src="IMAGES/mocktail 1.jpg" alt="Mocktails">
+                
+            </div>
 
         </div>
-
+    </div>
          </section>
 
 
@@ -188,17 +299,6 @@
     </main>
    
     <!-- Footer -->
-<footer
-
-  <footer class="footer">
-    <div class="footer-coloum">
-        <p>
-            Good food, Good mood
-        </p>
-        <p>
-            Mon-Sun: 7:00 AM - 9:00 PM
-        </p>
-    </div>
 
     <!-- Footer -->
     <footer>

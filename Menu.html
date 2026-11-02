@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crave Corner | Restaurant Menu</title>
     
+    
     <!--Embedded css-->
     <style>
         /* Base Reset */
@@ -47,19 +48,345 @@
             display: flex;
             gap: 20px;
         }
+        :root {
+    --primary-color: #A3704C;
+    --bg-color: #FDFBF7;
+    --card-bg: #F4EFEA;
+    --text-dark: #3E2723;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Hero Banner Section */
+.hero-section {
+    background-color: #D7CCC8;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.hero-title {
+    font-size: clamp(32px, 6vw, 64px);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-image-placeholder {
+    height: 150px; 
+    background: #E6DFD9; 
+    max-width: 250px; 
+    margin: 20px auto; 
+    border-radius: 8px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #A3968C;
+}
+
+/* Menu Container Layout */
+.menu-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.menu-title h1 {
+    font-size: 36px;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    color: #4A2E2B;
+}
+
+.menu-title span {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+/* Cart Top Button */
+.basket-toggle-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Filter Badges Category Selection */
+.categories-bar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.category-badge {
+    background-color: var(--card-bg);
+    color: var(--text-dark);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.category-badge.active, .category-badge:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Slider Carousel Mechanics */
+.slider-section {
+    position: relative;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.slider-window {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.slider-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    width: max-content;
+}
+
+/* Slider Navigation Arrows */
+.arrow-btn {
+    background: none;
+    border: none;
+    font-size: 35px;
+    color: #BCAAA4;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    user-select: none;
+    transition: color 0.2s;
+}
+
+.arrow-btn:hover {
+    color: var(--primary-color);
+}
+
+/*  Item Display Cards */
+.Item-card {
+    background: var(--card-bg);
+    border-radius: 4px;
+    width: 250px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.Item-img-placeholder {
+    width: 100%;
+    height: 180px;
+    background-color: #E6DFD9;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #A3968C;
+    font-size: 12px;
+}
+
+.Item-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0 2px 0;
+    align-self: flex-start;
+    color: #2F1D1A;
+}
+
+.Item-desc {
+    font-size: 11px;
+    color: #8D7B70;
+    margin-bottom: 15px;
+    align-self: flex-start;
+    text-align: left;
+    height: 28px;
+    overflow: hidden;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: auto;
+}
+
+.Item-price {
+    font-weight: bold;
+    font-size: 15px;
+    color: #2F1D1A;
+}
+
+.to-cart-btn {
+    background-color: #EFEBE9;
+    border: 1px solid #D7CCC8;
+    color: #7E6D63;
+    padding: 6px 12px;
+    font-size: 11px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: lowercase;
+    transition: all 0.2s;
+}
+
+.to-cart-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Center More Button */
+.more-btn-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.more-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Slide-out Checkout Sidebar panel */
+.checkout-sidebar {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 310px;
+    height: 100%;
+    background: white;
+    box-shadow: -4px 0 15px rgba(0,0,0,0.15);
+    z-index: 1000;
+    transition: right 0.3s ease;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-sidebar.open {
+    right: 0;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--card-bg);
+    padding-bottom: 10px;
+}
+
+.close-sidebar {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+}
+
+.cart-items-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #EEE;
+    font-size: 14px;
+}
+
+.cart-item-remove {
+    background: none;
+    border: none;
+    color: #C62828;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.sidebar-footer {
+    border-top: 2px solid var(--card-bg);
+    padding-top: 15px;
+}
+
+.total-price-box {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.checkout-submit-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
         /* Main Header Navigation */
-        .header-nav {
+
+         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 50px;
+            padding: 20px 60px;
             background-color: #F1E8E1;
+            border-bottom: 1px solid #eeeeee;
             position: sticky;
             top: 0;
             z-index: 100;
         }
-
       .logo {
     font-family: 'Playfair Display', serif;
     font-size: 30px;
@@ -117,32 +444,37 @@
             color: #121212;
         }
 
-        /* Hero Banner */
-        .hero-banner {
+     /* Hero Banner */
+        .hero {
             position: relative;
-            height: 500px;
-            background-color: #EADCD1;
+            height: 80vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('IMAGES/Menu.jpg') center/cover no-repeat;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-            text-align: center;
+            padding: 0 10%;
+            color: #ffffff;
+        }
+
+        .hero-content {
+            max-width: 500px;
         }
 
         .hero-subtitle {
-            color: #a4824e;
             font-size: 12px;
             text-transform: uppercase;
             letter-spacing: 3px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            display: block;
         }
 
         .hero-title {
             font-family: 'Georgia', serif;
-            font-size: 48px;
-            color: #6F4329;
+            font-size: 64px;
             font-weight: normal;
+            line-height: 1.1;
+            margin-bottom: 20px;
         }
+
 
         /* Menu Content Area */
         .menu-container {
@@ -158,7 +490,7 @@
         }
 
         .section-subtitle {
-            color: #c59d5f;
+            color: #090909;
             font-size: 11px;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -167,7 +499,7 @@
         .section-title {
             font-family: 'Georgia', serif;
             font-size: 36px;
-            color: #6F4329;
+            color: #1c1b1b;
             font-weight: normal;
             margin-top: 5px;
         }
@@ -183,7 +515,7 @@
         .menu-item {
             display: flex;
             align-items: flex-start;
-            background-color: #d8c6b8;
+            background-color: #060606;
             padding: 15px;
             border-radius: 6px;
             border: 1px solid #222222;
@@ -195,7 +527,7 @@
             border-radius: 50%;
             object-fit: cover;
             margin-right: 15px;
-            border: 1px solid #e2dcdc;
+            border: 1px solid #0f0f0f;
         }
 
         .item-details {
@@ -211,19 +543,19 @@
 
         .item-title {
             font-size: 16px;
-            color: #6F4329;
+            color: #010101;
             font-weight: bold;
         }
 
         .item-price {
-            color: #c59d5f;
+            color: #0f0f0f;
             font-weight: bold;
             font-size: 15px;
         }
 
         .item-description {
             font-size: 12px;
-            color: #6F4329;
+            color: #131212;
             line-height: 1.4;
         }
 
@@ -315,194 +647,166 @@
         <button class="btn-reservation">Checkout</button>
     </header>
 
-    <!-- Hero Banner -->
-    <section class="hero-banner">
-        <span class="hero-subtitle">Delicious & Amazing</span>
-        <h1 class="hero-title">Our Menu</h1>
-    </section>
 
-    <!-- Menu Sections -->
-    <main class="menu-container">
 
-        <!-- Appetizers Section -->
-        <div class="section-header">
-            <span class="section-subtitle">Starter Menu</span>
-            <h2 class="section-title">Appetizers</h2>
+    <!-- Hero Banner View -->
+    <div class="hero-section">
+        
+        <!-- Dropped your hero image link here -->
+        <img class="hero-image" src="IMAGES/Blue White Modern New Menu Banner.png" width="1000px" alt="Featured Meals">
+    </div>
+
+    <div class="menu-container">
+        
+        <div class="menu-header">
+            <div class="menu-title">
+                <h1>Menu</h1>
+                
+            </div>
         </div>
 
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="IMAGES/sushi 1.jpg" alt="Sushi">
-                <img src="IMAGES/sushi 2.jpg" alt="sushi">
-                <img src="IMAGES/sushi 3.jpg" alt="sushi">
-                <div class="item-details">
-                    <div class="item-header">
-                        <span class="item-title">Sushi</span>
-                        <span class="item-price">R90.00</span>
+
+        <!-- SLIDER ROW 1 -->
+        <div class="slider-section">
+            <button class="arrow-btn" onclick="moveSlider('track1', -1)">‹</button>
+            <div class="slider-window">
+                <div class="slider-track" id="track1">
+                    <div class="Item-card">
+                        <img class="Item-img" src="IMAGES/Burger 1.jpg" width="200px"  alt="Burgers">
+                        <div class="Item-name">Burgers</div>
+                        <div class="Item-desc">all types of smash burgers</div>
+                        <div class="card-footer">
+                            <span class="Item-price">R70.00</span>
+                            <button class="to-cart-btn" onclick="addToCart('Burgers', 70.00)">to cart</button>
+                        </div>
                     </div>
-                    <p class="item-description">Freshly prepared sushi rolls with delicious rice, seafood, and fresh ingredients, served with a tasty dipping sauce.</p>
+                    <div class="Item-card">
+                        <img class="Item-img" src="IMAGES/Pizza 1.jpg" width="250px" alt="Pizza">
+                        <div class="Item-name">Vegan pizza</div>
+                        <div class="Item-desc">all you can eat vegan pizza</div>
+                        <div class="card-footer">
+                            <span class="Item-price">R65.00</span>
+                            <button class="to-cart-btn" onclick="addToCart('Vegan pizza', 65.00)">to cart</button>
+                        </div>
+                    </div>
+                   
+                     <div class="Item-card">
+                        <img class="Item-img" src="IMAGES/sushi 1.jpg" width="200px" alt="Sushi">
+                        <div class="Item-name">Sushi</div>
+                        <div class="Item-desc">Fried sushi</div>
+                        <div class="card-footer">
+                            <span class="Item-price">R50.00</span>
+                            <button class="to-cart-btn" onclick="addToCart('sushi', 50.00)">to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="Item-card">
+                        <img class="Item-img" src="IMAGES/nacho 2.jpg" width="200px" alt="Nachos">
+                        <div class="Item-name">Nachos</div>
+                        <div class="Item-desc">Crunchy nachos</div>
+                        <div class="card-footer">
+                            <span class="Item-price">R50.00</span>
+                            <button class="to-cart-btn" onclick="addToCart('Nachos', 50.00)">to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="Item-card">
+                        <img class="Item-img" src="IMAGES/rib 2.jpg" width="200px" alt="Ribs">
+                        <div class="Item-name">Caramalised Ribs</div>
+                        <div class="Item-desc">Ribs with fried onion</div>
+                        <div class="card-footer">
+                            <span class="Item-price">R100 per gram</span>
+                            <button class="to-cart-btn" onclick="addToCart('Caramalised ribs', 100.00)">to cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <button class="arrow-btn" onclick="moveSlider('track1', 1)">›</button>
+        </div>
 
-             <div class="menu-item">
-                <img src="IMAGES/mac & cheese 1.jpg" alt="Mac and Cheese">
-                <img src="IMAGES/mac & cheese 2.jpg">
-                <img src="IMAGES/mac & cheese 3.jpg">
-                <div class="item-details">
-                    <div class="item-header">
-                        <span class="item-title">Mac and Cheese</span>
-                        <span class="item-price">R65.00</span>
+        <!-- SLIDER ROW 2: sides-->
+        <div class="slider-section">
+            <button class="arrow-btn" onclick="moveSlider('track2', -1)">‹</button>
+            <div class="slider-window">
+                <div class="slider-track" id="track2">
+                    <div class="coffee-card">
+                        <img class="Item-img" src="IMAGES/mac & cheese 2.jpg" width="200px" alt="Mac and cheese">
+                        <div class="Item-name">Mac and cheese</div>
+                        <div class="Item-desc">Creamy Mac and cheese</div>
+                        <div class="card-footer">
+                            <span class="Item-price">R40.00</span>
+                            <button class="to-cart-btn" onclick="addToCart('Mac and cheese', 40.0)">to cart</button>
+                        </div>
                     </div>
-                    <p class="item-description">Creamy, cheesy macaroni baked to perfection for a warm and comforting starter before big meals!</p>
+                    <div class="Item-card">
+                        <img class="Item-img" src="IMAGES/chicken nugget 2.jpg" width="200px" alt="Chicken Nuggets">
+                        <div class="Item-name">Chicken Nuggets</div>
+                        <div class="Item-desc">Freshly coated chicken nuggets</div>
+                        <div class="card-footer">
+                            <span class="Item-price">R45.00</span>
+                            <button class="to-cart-btn" onclick="addToCart('Chicken Nuggets', 45.00)">to cart</button>
+                        </div>
+                    </div>
+                    <div class="Item-card">
+                        <img class="Item-img" src="IMAGES/fries 2.jpg" width="200px" alt="Fries">
+                        <div class="Item-name">Parmesan Fries</div>
+                        <div class="Item-desc">Fries coated in parmesan cheese</div>
+                        <div class="card-footer">
+                            <span class="Item-price">R30.00</span>
+                            <button class="to-cart-btn" onclick="addToCart('Fries', 30.00)">to cart</button>
+                        </div>
+                    </div>
+
+                     <div class="Item-card">
+                        <img class="Item-img" src="IMAGES/juice 2.jpg" width="200px" alt="Juice">
+                        <div class="Item-name">Juice</div>
+                        <div class="Item-desc">freshly squeezed fruit juice</div>
+                        <div class="card-footer">
+                            <span class="Item-price">R30.00</span>
+                            <button class="to-cart-btn" onclick="addToCart('Juice', 30.00)">to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="Item-card">
+                        <img class="Item-img" src="IMAGES/mocktail 2.jpg" width="200px" alt="Mocktails">
+                        <div class="Item-name">Mocktails</div>
+                        <div class="Item-desc">strawbery non alcoholic refresher</div>
+                        <div class="card-footer">
+                            <span class="Item-price">R25.00</span>
+                            <button class="to-cart-btn" onclick="addToCart('mocktail', 25.00)">to cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <button class="arrow-btn" onclick="moveSlider('track2', 1)">›</button>
         </div>
 
-        <div class="menu-grid">
-        <div class="menu-item">
-            <img src="IMAGES/nacho 1.jpg" alt="Nacho's">
-            <img src="IMAGES/nacho 2.jpg">
-            <img src="IMAGES/nacho 3.jpg">
-            <div class="item-details">
-                <div class="item-header">
-                 <span class="item-title">Nacho's</span>
-                        <span class="item-price">R85.00</span>
-                    </div>
-                    <p class="item-description">Crispy tortilla chips topped with melted cheese, fresh toppings, and delicious sauces for a tasty and satisfying snack</p>
+        <div class="more-btn-container">
+            <button class="more-btn">More</button>
         </div>
-        </div>
-        </div>
+    </div>
 
-      <!-- Appetizers Section -->
-        <div class="section-header">
-            <span class="section-subtitle">Sarvoury</span>
-            <h2 class="section-title">Messy Grill</h2>
+    <!-- Sliding Sidebar Panel -->
+    <div class="checkout-sidebar" id="checkoutSidebar">
+        <div class="sidebar-header">
+            <h2>Your Basket</h2>
+            <button class="close-sidebar" onclick="toggleCart()">×</button>
         </div>
-
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="IMAGES/rib 1.jpg" alt="Ribs">
-                <img src="IMAGES/rib 2.jpg">
-                <img src="IMAGES/rib 3.jpg">
-                <div class="item-details">
-                    <div class="item-header">
-                        <span class="item-title">Ribs</span>
-                        <span class="item-price">R185.00</span>
-                    </div>
-                    <p class="item-description">Tender, smoky BBQ ribs glazed with a rich and flavourful sauce.</p>
-                </div>
+        <div class="cart-items-list" id="cartItemsList">
+            <p style="color:#888; text-align:center; margin-top:40px;">Your basket is empty.</p>
+        </div>
+        <div class="sidebar-footer">
+            <div class="total-price-box">
+                <span>Total:</span>
+                <span id="totalPrice">R0.00</span>
             </div>
-
-            <div class="menu-item">
-                <img src="IMAGES/wing 1.jpg" alt="Wings">
-                <img src="IMAGES/wing 2.jpg">
-                <img src="IMAGES/wing 3.jpg">
-                <div class="item-details">
-                    <div class="item-header">
-                        <span class="item-title">Wings</span>
-                        <span class="item-price">R65.00</span>
-                    </div>
-                    <p class="item-description">Crispy chicken wings with a tasty, flavourful sauce.</p>
-                </div>
-            </div>
-
-            <div class="menu-item">
-                <img src="IMAGES/chicken nugget 1.jpg" alt="Chicken Nuggets">
-                <img src="IMAGES/chicken nugget 2.jpg">
-                <img src="IMAGES/chicken nugget 3.jpg">
-                <div class="item-details">
-                    <div class="item-header">
-                        <span class="item-title">Chicken Nuggets</span>
-                        <span class="item-price">R39.00</span>
-                    </div>
-                    <p class="item-description">Golden, crispy nuggets made with tender chicken and a tasty dip</p>
-                </div>
-            </div>
-
-            
-            </div>
+            <button class="checkout-submit-btn" onclick="submitCheckout()">Checkout</button>
         </div>
+    </div>
+   
 
-        <!-- Main Dishes Section -->
-        <div class="section-header">
-            <span class="section-subtitle">Specialties</span>
-            <h2 class="section-title">Main Dishes</h2>
-        </div>
-
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="IMAGES/Burger 2.jpg" alt="Burgers">
-                <img src="IMAGES/Burger 3.jpg">
-                <div class="item-details">
-                    <div class="item-header">
-                        <span class="item-title">Burgers</span>
-                        <span class="item-price">R150.00</span>
-                    </div>
-                    <p class="item-description">Juicy grilled burgers with fresh toppings and a delicious signature sauce.</p>
-                </div>
-            </div>
-
-            <div class="menu-item">
-                <img src="IMAGES/Pizza 1.jpg" alt="Pizza">
-                <img src="IMAGES/pizza 2.jpg">
-                <img src="IMAGES/pizza 3.jpg">
-                <div class="item-details">
-                    <div class="item-header">
-                        <span class="item-title">Pizza</span>
-                        <span class="item-price">R115.00</span>
-                    </div>
-                    <p class="item-description">Crispy, freshly baked pizza with melted cheese, rich tomato sauce, and tasty toppings.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Side Dishes Section -->
-        <div class="section-header">
-            <span class="section-subtitle">Accompaniments</span>
-            <h2 class="section-title">Side Dishes and Refreshments</h2>
-        </div>
-
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="IMAGES/soda 1.jpg" alt="soda">
-                <img src="IMAGES/soda 2.jpg">
-                <img src="IMAGES/soda 4.jpg">
-                <div class="item-details">
-                    <div class="item-header">
-                        <span class="item-title">SODA</span>
-                        <span class="item-price">R20.00</span>
-                    </div>
-                    <p class="item-description">A refreshing, ice-cold fizzy drink with a delicious burst of flavour, perfect for pairing with any meal.</p>
-                </div>
-            </div>
-
-            <div class="menu-item">
-                <img src="IMAGES/fries 1.jpg" alt="Seasoned Fries">
-                <img src="IMAGES/fries 2.jpg">
-                <img src="IMAGES/fries 3.jpg">
-                <div class="item-details">
-                    <div class="item-header">
-                        <span class="item-title">Crispy Fries</span>
-                        <span class="item-price">R30.00</span>
-                    </div>
-                    <p class="item-description">Hand-cut golden potatoes tossed in sea salt and rosemary spices.</p>
-                </div>
-            </div>
-
-            <div class="menu-item">
-                <img src="IMAGES/mocktail 1.jpg" alt="Mocktails">
-                <img src="IMAGES/mocktail 2.jpg">
-                <img src="IMAGES/mocktail 3.jpg">
-                <div class="item-details">
-                    <div class="item-header">
-                        <span class="item-title">Mocktails</span>
-                        <span class="item-price">R45.00</span>
-                    </div>
-                    <p class="item-description">Refreshing fruit-based drinks with vibrant flavours and a sparkling finish.</p>
-                </div>
-            </div>
-        </div>
-    </main>
+</body>
+ </main>
 
     <!-- Footer -->
     <footer>
@@ -543,6 +847,7 @@
             &copy; 2026 Crave Corner. All Rights Reserved.
         </div>
     </footer>
-
+ <!-- Linking the external JavaScript engine -->
+    <script src="script.js"></script>
 </body>
 </html>

@@ -340,3 +340,19 @@ Karyative.2026.Home Delivery free icon.[FLATICON website] Available at:https://w
 Kayleigh Jones.2026.Lanterns and lights down either side of the driveway.[Pintrest] Available at:https://pin.it/7DENXzXQp Accessed 11 September 2026.
 <3.2026.Outside vendor.[Pintrest] Available at:https://pin.it/DBcuuBn5k Accessed 11 September 2026.
 
+# CRAVE CORNER PART 3 LAST PART 
+# Final Submission
+
+# Change log
+- Created and structured the website using HTML and CSS and Java scripting.
+- Improved the overall user interface and visual appearance.
+- we changed the whole menu because mainly the menu was not looking like the website so we had to make a new one 
+- Home page : we added a new slideshow for the banner to make it look more attracting to our customers 
+- Improved website navigation and accessibility.
+- Fixed the functionality of the header 
+- Fixed design and layout errors identified during testing.
+# Updates
+- html was used
+- java script was inserted and used
+- css was used 
+
