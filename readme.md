@@ -351,6 +351,7 @@ Kayleigh Jones.2026.Lanterns and lights down either side of the driveway.[Pintre
 - Improved website navigation and accessibility.
 - Fixed the functionality of the header 
 - Fixed design and layout errors identified during testing.
+- Added java script into the website 
 # Updates
 - html was used
 - java script was inserted and used
